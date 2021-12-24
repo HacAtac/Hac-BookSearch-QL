@@ -15,7 +15,6 @@ const typeDefs = gql`
     _id: ID
     authors: [String]
     description: String
-    bookId: String
     image: String
     link: String
     title: String
@@ -33,7 +32,6 @@ const typeDefs = gql`
       authors: [String]
       description: String!
       title: String!
-      bookId: Int!
       image: String!
       link: String!
     ): User

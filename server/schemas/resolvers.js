@@ -16,6 +16,7 @@ const resolvers = {
   Mutation: {
     addUser: async (parent, args) => {
       const user = await User.create(args);
+      console.log(user);
       const token = signToken(user);
 
       return { token, user };
@@ -38,11 +39,12 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-    saveBook: async (parent, args, { user }) => {
+    saveBook: async (parent, args, context) => {
+      console.log(context);
       try {
         const updatedUser = await User.findOneAndUpdate(
-          { _id: user._id },
-          { $addToSet: { savedBooks: args } },
+          { _id: context.user._id },
+          { $push: { savedBooks: args } },
           { new: true, runValidators: true }
         );
         return updatedUser;
