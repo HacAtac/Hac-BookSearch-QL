@@ -18,6 +18,7 @@ const resolvers = {
       throw new AuthenticationError("Not loggged in");
     },
   },
+
   //this is the mutation for our graphql server and it takes in the user input and creates a new user in the database
   //it returns the user object if the user is created successfully
   //if the user is not created successfully it returns null and throws an error to the client to handle it
