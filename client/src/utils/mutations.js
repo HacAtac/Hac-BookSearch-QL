@@ -38,7 +38,47 @@ export const ADD_USER = gql`
 `;
 
 export const SAVE_BOOK = gql`
-    mutatation saveBook($authors: [String!], $description: String!)
+  mutation saveBook(
+    $bookId: String!
+    $title: String!
+    $description: String!
+    $image: String!
+    $link: String!
+    $authors: [String]
+  ) {
+    saveBook(
+      bookId: $bookId
+      title: $title
+      description: $description
+      image: $image
+      link: $link
+      authors: $authors
+    ) {
+      _id
+      email
+      username
+      bookCount
+      savedBooks {
+        bookId
+        title
+        description
+      }
+    }
+  }
+`;
+
+export const REMOVE_BOOK = gql`
+  mutation removeBook($bookId: String!) {
+    removeBook(bookId: $bookId) {
+      _id
+      username
+      savedBooks {
+        bookId
+        title
+        authors
+      }
+    }
+  }
 `;
 
 // // route to get logged in user's info (needs the token)
