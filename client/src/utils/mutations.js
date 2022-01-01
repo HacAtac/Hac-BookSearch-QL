@@ -1,5 +1,8 @@
 import { gql } from "@apollo/client";
 
+//check out my apollo playground. It's pretty much the same as what were putting in here
+//but all thats diff is we're making and exporting function here.
+
 export const LOGIN_USER = gql`
   mutation login($email: String!, $password: String!) {
     login(email: $email, password: $password) {
@@ -32,6 +35,10 @@ export const ADD_USER = gql`
       }
     }
   }
+`;
+
+export const SAVE_BOOK = gql`
+    mutatation saveBook($authors: [String!], $description: String!)
 `;
 
 // // route to get logged in user's info (needs the token)
