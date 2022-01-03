@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap";
 
 import Auth from "../utils/auth";
-import { searchGoogleBooks } from "../utils/api";
+import { searchGoogleBooks } from "../utils/API";
 import { saveBookIds, getSavedBookIds } from "../utils/localStorage";
 import { useMutation } from "@apollo/react-hooks";
 import { SAVE_BOOK } from "../utils/mutations";
@@ -55,6 +55,7 @@ const SearchBooks = () => {
         title: book.volumeInfo.title,
         description: book.volumeInfo.description,
         image: book.volumeInfo.imageLinks?.thumbnail || "",
+        link: book.volumeInfo.infoLind || "",
       }));
 
       setSearchedBooks(bookData);
