@@ -2,15 +2,15 @@
 
 <h2>Description</h2>
   <p>Created With: React, state, hooks, props, JSX, conditional rendering, form validation, tailwind + css, MVC structure. </br>
- First: I've created a react app</br> 
- Second: I've installed dependancies + for tailwindcss dependancies </br> 
- Third: Once I've connected to server, I have created About Me "home render"</br>
- Fourth: Then Ive made Header and Footer components that show correct page once clicked. </br>
- Fifth: I've made sure that the 'category click' updates the webpage title. </br>
- Sixth: Then I've made the Portfolio component and displayed 6 of my projects in cards that show links and are responsive.</br>
- Seventh: I've then made the Contact component and have made sure that the form has validation and have put a few icons to contact me via email/phone. </br>
- Eighth: Then I've made the Resume component and have listed my proficiencies as-well as a downloadle link to Resume('needs 2 be updated') </br>
- Ninth: I've then used some CSS animations to make the page more active and brushed up some break point issues </br>
+ First: I've studied the legacy code that utilized a restful API for CRUD methods</br> 
+ Second: I've updated server.js to include an apollo server </br> 
+ Third: Then I've converted the restfull API schema into my typeDefs.js</br>
+ Fourth: Once my typeDefs were defined i've then made resolvers to handle the queries and mutations. 'Basically the same as GET POST PUT DELETE'</br>
+ Fifth: Then I've used the one endpoint from apollo-playground to ensure all routes/methods are working. </br>
+ Sixth: I've then converted my JWT file to be used in a graphQL apollo application + tested it in apollo playground.</br>
+ Seventh: Once I've found that all my queries/mutations, and JWT were working, I've then started the front end implementation as follows... </br>
+ Eighth: First, in client/utils i've made a mutations.js file to implement our graphQL mutations. Secondly, I've made queries.js to handle the 'me' page query. Thirdly, I've updated my components to handle our newly created graphQL application </br>
+ Ninth: Once all previous steps were completed I've ran through the application to ensure everything is workign as inteded. </br>
  Once all functionality was completed I've used React to deploy live on GitHub Pages <a href ="https://hacatac.github.io/hac-portfolio/" target="_blank">Link to deployed application.</a>. </br>
 
  </p>
