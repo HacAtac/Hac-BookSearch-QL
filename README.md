@@ -10,8 +10,9 @@
  Sixth: I've then converted my JWT file to be used in a graphQL apollo application + tested it in apollo playground.</br>
  Seventh: Once I've found that all my queries/mutations, and JWT were working, I've then started the front end implementation as follows... </br>
  Eighth: First, in client/utils i've made a mutations.js file to implement our graphQL mutations. Secondly, I've made queries.js to handle the 'me' page query. Thirdly, I've updated my components to handle our newly created graphQL application </br>
- Ninth: Once all previous steps were completed I've ran through the application to ensure everything is workign as inteded. </br>
- Once all functionality was completed I've used React to deploy live on GitHub Pages <a href ="https://hacatac.github.io/hac-portfolio/" target="_blank">Link to deployed application.</a>. </br>
+ Ninth: I've also have added some "scripts" in package.json files so that it can run both servers with concurrently.
+ Tenth: Once all previous steps were completed I've ran through the application to ensure everything is workign as inteded. </br>
+ Once all functionality was completed I've used React to deploy live on GitHub Pages <a href ="https://hac-booksearchql.herokuapp.com/" target="_blank">Link to deployed application.</a>. </br>
 
  </p>
 
@@ -20,7 +21,7 @@
 1: Make sure you have react downloaded (if you don't, follow the instructions on the React Website)</br>
 2: Clone the repo </br>
 3: Install dependencies with npm -i </br>
-4: Run npm start to run the server and make the API live </br>
+4: Run npm run develop in the root of app to run concurrently for both servers. </br>
 5: Use your device to test this application. </br>
 
 ## Language
@@ -29,7 +30,11 @@ JavaScript </br>
 JSX </br>
 React </br>
 GraphQL/Apollo </br>
+Mongoose </br>
+Apollo Server Express </br>
 JWT authentication </br>
+BCRYPT </br>
+concurrently </br>
 Object Oriented Programming </br>
 useEffect </br>
 useState </br>
@@ -102,7 +107,7 @@ LinkedIn: https://www.linkedin.com/in/jordan-hackworth-898205217/ </br>
 E-mail: jhack00@icloud.com </br>
 
 <a href ="https://github.com/HacAtac/Hac-BookSearch-QL" target="_blank">Link to my git hub application.</a></br>
-<a href ="https://hacatac.github.io/hac-portfolio/" target="_blank">Link to deployed application.</a>
+<a href ="https://hac-booksearchql.herokuapp.com/" target="_blank">Link to deployed application.</a>
 
 <h3>Screenshot of app!</h3>
 
