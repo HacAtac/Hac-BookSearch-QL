@@ -2,6 +2,7 @@ import { gql } from "@apollo/client";
 
 //check out my apollo playground. It's pretty much the same as what were putting in here
 //but all thats diff is we're making and exporting function here.
+//this is why we have made and tested our graphQL apollo mutations/queries in apollo playground to make the implementation easier
 
 export const LOGIN_USER = gql`
   mutation login($email: String!, $password: String!) {
