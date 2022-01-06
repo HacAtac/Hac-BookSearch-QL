@@ -12,9 +12,14 @@
  Eighth: First, in client/utils i've made a mutations.js file to implement our graphQL mutations. Secondly, I've made queries.js to handle the 'me' page query. Thirdly, I've updated my components to handle our newly created graphQL application </br>
  Ninth: I've also have added some "scripts" in package.json files so that it can run both servers with concurrently.
  Tenth: Once all previous steps were completed I've ran through the application to ensure everything is workign as inteded. </br>
- Once all functionality was completed I've used React to deploy live on GitHub Pages <a href ="https://hac-booksearchql.herokuapp.com/" target="_blank">Link to deployed application.</a>. </br>
+ Once all functionality was completed I've used MongoDB Atlas and Heroku to deploy my application live! <a href ="https://hac-booksearchql.herokuapp.com/" target="_blank">Link to deployed application.</a>. </br>
 
  </p>
+
+## Thoughts
+
+All and I see how using a graphQL/Apollo server can help tremendously with scaling applications. </br>
+For small or personal applications restfull API's will work fine but will run into bottlenecks if using a ton of scaling data </br>
 
 ## Usage
 
